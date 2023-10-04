@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Row Span Attribute</title>
+
+    <style>
+        html,head{
+            height: 100%;
+            width: 100%;
+        }
+        table,td,tr,th{
+            border: 5px solid orange;
+            border-collapse:collapse;
+        }
+        table{
+            width:100%;
+        }
+        tr{
+            height:100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Game of the Year</h1>
+    <table>
+        <tr>
+            <th>Ranking</th>
+            <th>Name</th>
+            <th>Gamer</th>
+        </tr>
+        <tr>
+            <td rowspan="2">1</td>
+            <td>Apex Legends</td>
+            <td>Mande</td>
+        </tr>
+        <tr>
+            
+            <td>League of Legends</td>
+            <td>Faker</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Valorant</td>
+            <td>Asuna</td>
+        </tr>
+    </table>
+</body>
+</html>
