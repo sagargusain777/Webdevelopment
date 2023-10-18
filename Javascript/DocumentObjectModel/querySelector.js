@@ -42,3 +42,25 @@ console.log(username.innerText)
 //Correct Way to change Text inside a tag
 username.innerText ="Simran Singh"
 console.log(username.innerText)
+
+
+//querySelector using classname
+
+const element =document.querySelector(".block")
+console.log(element.innerHTML)
+
+//Check the Children of tag
+console.log(element.children)
+// element.innerHTML="<h4>I am playing league of legends</h4>"
+
+
+
+//querySelectorAll
+const ele =document.querySelectorAll(".block")
+console.log(ele)
+function print (value){
+    console.log(value);
+
+}
+// ele.forEach((e)=>(console.log(e.innerHTML)))
+ele.forEach(print)
