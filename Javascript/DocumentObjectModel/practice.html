@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <style>
+        .decoration{
+            color :aqua;
+           
+            
+        }
+        .underline{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navigation"><h1>Welcome to the GYM Bros</h1></nav>
+    <div class="block">
+
+        Hey I am working on New Project
+        Regards<span id="username">Uniq </span>
+        <p class="paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, excepturi corrupti in animi consequatur atque ipsum iure voluptatem quia natus dignissimos reiciendis ut amet, quam dolores non ab dolorum! Quo?</p>
+
+    </div>
+
+    <script>
+
+        //Query Selector using class
+        const navigation =document.querySelector(".navigation");
+        console.log(navigation)
+        console.log(navigation.innerHTML);
+        //Manipulating Data
+        navigation.innerHTML="You Look Really Amazing";
+        navigation.classList.add("decoration","underline");
+        console.log(navigation.classList)
+
+
+
+
+    </script>
+
+    
+</body>
+</html>
