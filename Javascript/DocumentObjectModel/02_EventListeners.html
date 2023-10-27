@@ -1,0 +1,38 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listener</title>
+</head>
+<body>
+    <nav class="block"><mark>Welcome to My Website</mark></nav>
+    <div class="block">
+        <h1> You Working on Aesthetic<span  id ="username">Mandana</span></h1>
+        <p class="block"> You body looks Outstanding</p>
+        <pre><code>console.log("Hello Beautiful")</code></pre>
+
+    </div>
+    <button onclick="handlebuttonclick()" >CLick Me</button>
+    <button id="clickButton">Press Me Hard</button>
+
+    <script>
+        //In JavaScript, event listeners are functions that you can attach to HTML elements to make them respond to 
+        //specific events, such as user interactions like clicks, keypresses, mouse movements, and more.
+        // Event listeners enable you to add interactivity and dynamic behavior to your web pages.
+        function handlebuttonclick(){
+            console.log("That Button is clicked");
+            alert("Hey I am clicked")
+        }
+
+        const ele = document.getElementById("clickButton");
+        ele.onclick = function(){
+            console.log("Hey I am Clicked");
+        }
+
+    </script>
+    
+</body>
+</html>
