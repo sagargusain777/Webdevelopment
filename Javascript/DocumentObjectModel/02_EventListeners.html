@@ -9,7 +9,7 @@
 </head>
 <body>
     <nav class="block"><mark>Welcome to My Website</mark></nav>
-    <div class="block">
+    <div class="final">
         <h1> You Working on Aesthetic<span  id ="username">Mandana</span></h1>
         <p class="block"> You body looks Outstanding</p>
         <pre><code>console.log("Hello Beautiful")</code></pre>
@@ -28,10 +28,29 @@
         }
 
         const ele = document.getElementById("clickButton");
-        ele.onclick = function(){
-            console.log("Hey I am Clicked");
-        }
+        // ele.onclick = function(){
+        //     console.log("Hey I am Clicked");
+        // }
 
+
+        //Most PrefferedWay
+        ele.addEventListener('click',function(){
+            console.log("Hey i am hero")
+        })
+
+    </script>
+    <!-- <script>
+        ele.onclick=()=>{
+            console.log("hacked")
+        }
+    </script> -->
+
+    <script>
+        const element =document.querySelector(".final")
+
+        ele.addEventListener('click',function(){
+            element.style.color="red";
+        })
     </script>
     
 </body>
