@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Class</title>
+</head>
+<body>
+    <nav class="navigation">
+        Welcome to Singapore
+    </nav>
+    <div class="block"> 
+        <h3>There are many Places to  Explore in Singapore</h3>
+
+    </div>
+    <div class="final">
+        <h1> You Working on Aesthetic<span  id ="username">Mandana</span></h1>
+        <p class="block"> You body looks Outstanding</p>
+        <pre><code>console.log("Hello Beautiful")</code></pre>
+
+    </div>
+    <button class="idiot">Click Me</button>
+    <button class="idiot">Press Me Hard</button>
+
+    <script>
+        const element =document.getElementById("username")
+        const elementbutton=document.getElementsByClassName("idiot");
+        const firstelementbutton = elementbutton[0];
+        const secondelementbutton =elementbutton[1];
+
+        //Individually giving some task to the butttons
+         firstelementbutton.onclick= function(){
+            element.style.color="red";
+
+         }
+         secondelementbutton.onclick= function(){
+            element.style.color="yellow";
+
+         }
+         
+
+    </script>
+    
+</body>
+</html>
