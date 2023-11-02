@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listener</title>
+</head>
+<body>
+    <nav class="block">
+        <p class="paragraph">Welcome to My Website</p>
+    </nav>
+    <div class="block">
+        <h4>
+            Hey there, My name is
+            <span id="username">Sagar Singh</span>
+        </h4>
+    </div>
+    <!--1st Way to Add event listener-->
+    <button onclick="console.log('Hey i am Working fine !!!!!')">Click Me</button>
+    <button onclick="handlebutton()">Press Me</button>
+    <button class="stupid">Don't Click Me</button>
+
+    <script>
+        //2nd Way
+        function handlebutton(){
+            console.log("Hey Brother You are Just Worrying Alot!!!")
+            alert("You are idiot")
+        }
+    </script>
+    <script>
+        //3rd Way
+        const ele =document.getElementsByClassName("stupid")
+        const firstelement=ele[0];
+        firstelement.onclick=function(){
+            console.log("I am Working Fine")
+        }
+
+    </script>
+    
+</body>
+</html>
