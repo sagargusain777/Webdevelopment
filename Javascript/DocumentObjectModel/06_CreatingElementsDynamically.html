@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="block">
+        <p class="paragraph">Welcome to my Website</p>
+    </nav>
+    <div id="block">
+        <h4 id ="nameblock">
+            Hey There,My name is
+            <span id="username">Sagar Singh</span>
+        </h4>
+        <p class="block">Here is code For you</p>
+        <pre><code>console.log("Hello")</code></pre>
+
+    </div>
+    <div id ="newBlock"></div>
+    <button id="clicking">Click Me</button>
+    <script>
+        const container=document.getElementById("newBlock")
+
+        const buttoncl =document.getElementById("clicking")
+        buttoncl.addEventListener("click",()=>{
+            // elementdata.innerHTML="<h1>SAGAR SINGH</h1>"  -> It will Work only one time
+            const el =document.createElement('h1')
+            el.innerText = "SAGAR SINGH"
+            container.appendChild(el)
+            
+        })
+    </script>
+</body>
+</html>
